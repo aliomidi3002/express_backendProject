@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/Login/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm" method="POST" action="/login">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <div class="remember-me">
+        <input type="checkbox" id="remember_me" name="remember_me" />
+        <label for="remember_me">Remember Me</label>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="../signup">Register</a></p>
+  </div>
+</body>
+</html>

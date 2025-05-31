@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="/Signup/signup.css">
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Create an Account</h2>
+    <form id="signupForm" method="POST" action="/signup">
+      <div class="error" id="errorMsg">Passwords do not match.</div>
+
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" required />
+
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name" required />
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <div class="remember-me">
+        <input type="checkbox" id="remember_me" name="remember_me" />
+        <label for="remember_me">Remember Me</label>
+      </div>
+      
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="../login">Login</a></p>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>
