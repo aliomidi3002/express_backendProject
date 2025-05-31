@@ -18,9 +18,3 @@ This is a full-stack web application built using **Node.js (Express)** and **SQL
   - Accessible only after successful login
   - Simple and responsive UI
   - Frontend built with vanilla JavaScript
-
----
-
-## 📂 Project Structure
-
-# express_backendProject
